@@ -6,10 +6,6 @@
 [![APLv2][license-badge]][license]
 [![Build Status - GitHub Actions][gha-badge]][gha-ci]
 
-## Getting Started
-
-This project is intended to be used with the latest Active LTS release of [Node.js][nodejs].  
-
 ## Features
 This project will be able to:
 - [ ] Create services that repeat on a specified interval

@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "node-church-scheduler",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "Schedule your serving team on Telegram!",
   "type": "module",
   "engines": {
     "node": ">= 18.12 <19"
@@ -15,6 +15,7 @@
     "eslint-config-prettier": "~8.8",
     "eslint-plugin-jest": "~27.2",
     "jest": "~29.5",
+    "nodemon": "^2.0.22",
     "prettier": "~2.8",
     "rimraf": "~5.0",
     "ts-api-utils": "~0.0.44",
@@ -22,7 +23,8 @@
     "typescript": "~5.0"
   },
   "scripts": {
-    "start": "node build/src/main.js",
+    "start": "node build/src/index.js",
+    "dev": "nodemon build/src/index.js",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint",
     "build": "tsc -p tsconfig.json",
@@ -33,7 +35,7 @@
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "Sean Relampagos <sean@relampagos.org>",
   "license": "Apache-2.0",
   "dependencies": {
     "tslib": "~2.5"
